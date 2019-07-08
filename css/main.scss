@@ -121,6 +121,9 @@ canvas {
   justify-content: center;
   margin-top: 0.5rem;
 }
+.mobile-tablet {
+  display: none;
+}
 @keyframes line-anim {
   to {
     stroke-dashoffset: 0;
@@ -143,5 +146,10 @@ canvas {
 @keyframes heightUp {
   to {
     height: 84vh;
+  }
+}
+@keyframes opacityFill {
+  to {
+    opacity: 0.8;
   }
 }

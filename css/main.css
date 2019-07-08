@@ -170,6 +170,10 @@ canvas {
   margin-top: 0.5rem;
 }
 
+.mobile-tablet {
+  display: none;
+}
+
 @-webkit-keyframes line-anim {
   to {
     stroke-dashoffset: 0;
@@ -221,6 +225,18 @@ canvas {
 @keyframes heightUp {
   to {
     height: 84vh;
+  }
+}
+
+@-webkit-keyframes opacityFill {
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes opacityFill {
+  to {
+    opacity: 0.8;
   }
 }
 /*# sourceMappingURL=main.css.map */

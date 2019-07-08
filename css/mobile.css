@@ -1,0 +1,60 @@
+html,
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+a#begin-btn {
+  display: none;
+}
+
+canvas {
+  display: none;
+}
+
+.canvas-box {
+  display: none;
+}
+
+.mobile-tablet {
+  display: block;
+}
+
+p {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0;
+  -webkit-animation: opacityFill 0.6s forwards 4.8s;
+          animation: opacityFill 0.6s forwards 4.8s;
+}
+
+p.lead {
+  color: white;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+svg {
+  width: 85vw;
+}
+
+@media (max-width: 600px) {
+  p.lead {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  p.lead {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 0.6rem;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
