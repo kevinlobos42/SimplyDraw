@@ -15,10 +15,20 @@ window.onload = () => {
   }, 4500);
 };
 document.querySelector("#begin-btn").addEventListener("click", () => {
-  document.querySelector("canvas").style.animation = "heightUp 2s forwards";
+  document.querySelector(".canvas-box").style.height = "819px";
+  setTimeout(() => {
+    document.querySelector("canvas").height = window.innerHeight - 150;
+  }, 2000);
   document.querySelector("svg").style.height = "50px";
   document.querySelector("svg").style.position = "absolute";
   document.querySelector("svg").style.top = "50px";
   document.querySelector("svg").style.left = "0";
   document.querySelector("#begin-btn").style.margin = ".5rem";
+  document.querySelector("#begin-btn").classList.toggle("cl");
+});
+window.addEventListener("resize", () => {
+  if (document.querySelector("#begin-btn").classList.contains("cl")) {
+    document.querySelector("canvas").width = window.innerWidth - 40;
+    document.querySelector("canvas").height = window.innerHeight - 150;
+  }
 });

@@ -109,9 +109,16 @@ a {
   }
 }
 canvas {
-  height: 0px;
-  width: 95vw;
   background: white;
+  transition: all 5s linear;
+}
+.canvas-box {
+  transition: all 2s;
+  height: 0px;
+  width: 98vw;
+  background: white;
+  display: grid;
+  justify-content: center;
   margin-top: 0.5rem;
 }
 @keyframes line-anim {

@@ -151,9 +151,22 @@ a {
 }
 
 canvas {
-  height: 0px;
-  width: 95vw;
   background: white;
+  -webkit-transition: all 5s linear;
+  transition: all 5s linear;
+}
+
+.canvas-box {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  height: 0px;
+  width: 98vw;
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 0.5rem;
 }
 
