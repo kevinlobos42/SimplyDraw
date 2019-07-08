@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+body {
+  background: #204474;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#logo {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 513px;
+  stroke-dashoffset: 513px;
+  -webkit-animation: line-anim 0.8s ease forwards;
+          animation: line-anim 0.8s ease forwards;
+}
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 205px;
+  stroke-dashoffset: 205px;
+  -webkit-animation: line-anim 0.8s ease forwards 0.3s;
+          animation: line-anim 0.8s ease forwards 0.3s;
+}
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 454px;
+  stroke-dashoffset: 454px;
+  -webkit-animation: line-anim 0.8s ease forwards 0.6s;
+          animation: line-anim 0.8s ease forwards 0.6s;
+}
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 377px;
+  stroke-dashoffset: 377px;
+  -webkit-animation: line-anim 0.8s ease forwards 0.9s;
+          animation: line-anim 0.8s ease forwards 0.9s;
+}
+
+#logo path:nth-child(6) {
+  stroke-dasharray: 209.5px;
+  stroke-dashoffset: 209.5px;
+  -webkit-animation: line-anim 1s ease forwards 1.2s;
+          animation: line-anim 1s ease forwards 1.2s;
+}
+
+#logo path:nth-child(7) {
+  stroke-dasharray: 431px;
+  stroke-dashoffset: 431px;
+  -webkit-animation: line-anim 1s ease forwards 1.5s;
+          animation: line-anim 1s ease forwards 1.5s;
+}
+
+#logo path:nth-child(8) {
+  stroke-dasharray: 567px;
+  stroke-dashoffset: 567px;
+  -webkit-animation: line-anim 2s ease forwards 1.8s;
+          animation: line-anim 2s ease forwards 1.8s;
+}
+
+#logo path:nth-child(9) {
+  stroke-dasharray: 209.5px;
+  stroke-dashoffset: 209.5px;
+  -webkit-animation: line-anim 0.8s ease forwards 2.1s;
+          animation: line-anim 0.8s ease forwards 2.1s;
+}
+
+#logo path:nth-child(10) {
+  stroke-dasharray: 289px;
+  stroke-dashoffset: 289px;
+  -webkit-animation: line-anim 0.8s ease forwards 2.4s;
+          animation: line-anim 0.8s ease forwards 2.4s;
+}
+
+#logo path:nth-child(11) {
+  stroke-dasharray: 423px;
+  stroke-dashoffset: 423px;
+  -webkit-animation: line-anim 0.8s ease forwards 2.7s;
+          animation: line-anim 0.8s ease forwards 2.7s;
+}
+
+#logo g path:nth-child(1) {
+  stroke-dasharray: 748.7px;
+  stroke-dashoffset: 748.7px;
+  -webkit-animation: line-anim 2s ease forwards 3s;
+          animation: line-anim 2s ease forwards 3s;
+}
+
+#logo g path:nth-child(2) {
+  stroke-dasharray: 77.1px;
+  stroke-dashoffset: 77.1px;
+  -webkit-animation: line-anim 1s ease forwards 3.3s;
+          animation: line-anim 1s ease forwards 3.3s;
+}
+
+#logo g path:nth-child(3) {
+  stroke-dasharray: 200.4;
+  stroke-dashoffset: 200.4px;
+  -webkit-animation: line-anim 1s ease forwards 3.6s;
+          animation: line-anim 1s ease forwards 3.6s;
+}
+
+#begin-btn {
+  margin-top: 3rem;
+  height: 10vh;
+  width: 30vw;
+  border-radius: 8px;
+  opacity: 0;
+  background: white;
+  text-align: center;
+  text-decoration: none;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#begin-btn p {
+  font-size: 2.5rem;
+}
+
+#begin-btn:hover {
+  background: #ffff80;
+}
+
+canvas {
+  height: 0px;
+  width: 95vw;
+  background: white;
+  margin-top: 0.5rem;
+}
+
+@-webkit-keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fillWhite {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+@keyframes fillWhite {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+@-webkit-keyframes opac {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opac {
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes heightUp {
+  to {
+    height: 84vh;
+  }
+}
+
+@keyframes heightUp {
+  to {
+    height: 84vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */
