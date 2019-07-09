@@ -33,7 +33,7 @@ document.querySelector("#begin-btn").addEventListener("click", () => {
   document.querySelector("svg").style.position = "absolute";
   document.querySelector("svg").style.top = "50px";
   document.querySelector("svg").style.left = "0";
-  document.querySelector("#begin-btn").style.margin = ".5rem";
+  document.querySelector("#begin-btn").style.display = "none";
   document.querySelector("#begin-btn").classList.toggle("cl");
 });
 
