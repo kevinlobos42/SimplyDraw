@@ -8,6 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 a {
   color: black;
@@ -117,12 +118,59 @@ canvas {
   height: 0px;
   width: 98vw;
   background: white;
-  display: grid;
-  justify-content: center;
   margin-top: 0.5rem;
 }
 .mobile-tablet {
   display: none;
+}
+.option {
+  transition: all 0.5s;
+  .box {
+    text-align: center;
+    height: 50px;
+    width: 90px;
+    display: none;
+    position: absolute;
+    background: #f2f2f2;
+    cursor: pointer;
+  }
+  #color-box,
+  #size-box {
+    transition: all 0.5s;
+  }
+  .box-items {
+    display: none;
+    .item {
+      padding: 1rem;
+    }
+    .sizes {
+      border: solid 1px black;
+    }
+    .black {
+      background: black;
+    }
+    .blue {
+      background: blue;
+    }
+    .purple {
+      background: purple;
+    }
+    .pink {
+      background: pink;
+    }
+    .red {
+      background: red;
+    }
+    .orange {
+      background: orange;
+    }
+    .yellow {
+      background: yellow;
+    }
+    .green {
+      background: green;
+    }
+  }
 }
 @keyframes line-anim {
   to {

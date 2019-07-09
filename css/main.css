@@ -17,6 +17,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
 a {
@@ -162,16 +163,76 @@ canvas {
   height: 0px;
   width: 98vw;
   background: white;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 0.5rem;
 }
 
 .mobile-tablet {
   display: none;
+}
+
+.option {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.option .box {
+  text-align: center;
+  height: 50px;
+  width: 90px;
+  display: none;
+  position: absolute;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.option #color-box,
+.option #size-box {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.option .box-items {
+  display: none;
+}
+
+.option .box-items .item {
+  padding: 1rem;
+}
+
+.option .box-items .sizes {
+  border: solid 1px black;
+}
+
+.option .box-items .black {
+  background: black;
+}
+
+.option .box-items .blue {
+  background: blue;
+}
+
+.option .box-items .purple {
+  background: purple;
+}
+
+.option .box-items .pink {
+  background: pink;
+}
+
+.option .box-items .red {
+  background: red;
+}
+
+.option .box-items .orange {
+  background: orange;
+}
+
+.option .box-items .yellow {
+  background: yellow;
+}
+
+.option .box-items .green {
+  background: green;
 }
 
 @-webkit-keyframes line-anim {
