@@ -286,6 +286,10 @@ canvas {
   background-color: #ff0000;
 }
 
+#numChoice {
+  display: none;
+}
+
 .menu-label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

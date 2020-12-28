@@ -8,7 +8,12 @@ body {
 * {
   overflow: hidden;
 }
-
+#numChoice {
+  display: block;
+}
+#sizeCode {
+  display: none;
+}
 a#begin-btn {
   font-size: 2rem;
   p {

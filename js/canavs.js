@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
   const sizeCode = document.querySelector("#sizeCode");
   const colorChooser = document.querySelector("#color");
   const colorCode = document.querySelector("#colorCode");
-  const sizes = document.querySelectorAll(".item");
+  const sizes = document.querySelector("#numChoice");
   const clear = document.querySelector("#clear");
   const save = document.querySelector("#save");
   let lineWidth = 2;
@@ -76,6 +76,10 @@ colorCode.value = colorChooser.value;
       sizeSlider.value = lineWidth;
 
     }
+  })
+  sizes.addEventListener("input", ()=>{
+    lineWidth = parseInt(sizes.value)
+    console.log(sizes.value)
   })
   colorCode.addEventListener("input",(e)=>{
     color = colorCode.value;
