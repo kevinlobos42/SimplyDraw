@@ -119,4 +119,8 @@ colorCode.value = colorChooser.value;
     ctx.beginPath();
   }
 });
+window.addEventListener("scroll", noScroll)
+function noScroll() {
+  window.scrollTo(0, 0);
+}
 
