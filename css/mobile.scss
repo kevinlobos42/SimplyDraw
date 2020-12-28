@@ -12,7 +12,7 @@ body {
   display: block;
 }
 #sizeCode {
-  display: none;
+  display: none !important;
 }
 a#begin-btn {
   font-size: 2rem;
