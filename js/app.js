@@ -1,4 +1,6 @@
 const logo = document.querySelectorAll("path");
+const canvas = document.querySelector("#canvas");
+const ctx = canvas.getContext("2d");
 
 window.onload = () => {
   setTimeout(() => {
@@ -21,10 +23,14 @@ document.querySelector("#begin-btn").addEventListener("click", () => {
   document.querySelector("#begin-btn").style.display = "none";
   document.querySelector("#begin-btn").classList.toggle("cl");
 });
+var w = canvas.width;
+var h = canvas.height;
+window.addEventListener("resize", resize)
+function resize(){
+  let temp = ctx.getImageData(0,0,w,h)
+  ctx.canvas.width = window.innerWidth ;
+  ctx.canvas.height = window.innerHeight;
+  w = canvas.width, h = canvas.height
+  ctx.putImageData(temp,0,0)
 
-window.addEventListener("resize", () => {
-  if (document.querySelector("#begin-btn").classList.contains("cl")) {
-    document.querySelector("canvas").width = window.innerWidth;
-    document.querySelector("canvas").height = window.innerHeight;
-  }
-});
+}
