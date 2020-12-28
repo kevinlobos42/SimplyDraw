@@ -39,10 +39,6 @@ a#begin-btn p {
   font-size: 0.8rem;
 }
 
-.menu .flex-menu .menu-label {
-  width: 20px;
-}
-
 .menu .flex-menu #sizeRange {
   display: none;
 }
