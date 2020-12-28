@@ -1,5 +1,6 @@
 html,
 body {
+  position: relative;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
@@ -10,7 +11,7 @@ body {
 }
 
 body {
-  position: relative;
+  position: fixed;
 }
 
 a#begin-btn {
@@ -44,10 +45,6 @@ a#begin-btn p {
 
 .menu .flex-menu .input-code {
   width: 40px;
-}
-
-.mobile-tablet {
-  display: block;
 }
 
 p {

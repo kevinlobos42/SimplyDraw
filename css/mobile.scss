@@ -1,5 +1,6 @@
 html,
 body {
+  position: relative;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
@@ -8,7 +9,7 @@ body {
   overflow: hidden;
 }
 body {
-  position: relative;
+  position: fixed;
 }
 a#begin-btn {
   font-size: 2rem;
@@ -36,13 +37,6 @@ a#begin-btn {
       width: 40px;
     }
   }
-}
-// canvas {
-//   display: none;
-// }
-
-.mobile-tablet {
-  display: block;
 }
 p {
   font-size: 1.2rem;
