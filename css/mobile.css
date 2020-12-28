@@ -9,6 +9,10 @@ body {
   overflow: hidden;
 }
 
+body {
+  position: relative;
+}
+
 a#begin-btn {
   font-size: 2rem;
 }
