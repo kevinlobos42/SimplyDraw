@@ -100,6 +100,7 @@ colorCode.value = colorChooser.value;
     touchDraw(e);
   }
   function touchDraw(e){
+    window.scrollTo(0,0);
     var touch = e.changedTouches[0];
     var x = parseInt(touch.clientX);
     var y = parseInt(touch.clientY);
