@@ -4,20 +4,41 @@ body {
   width: 100vw;
   height: 100vh;
 }
-// a#begin-btn {
-//   display: none;
-// }
+a#begin-btn {
+  font-size: 2rem;
+  p {
+    font-size: 1rem;
+  }
+}
+.menu {
+  width: 100vw;
+  & > * {
+    height: 35px;
+    margin: 0.5rem 0rem;
+  }
+  .button {
+    font-size: 0.8rem;
+  }
+  .flex-menu {
+    .menu-label {
+      width: 20px;
+    }
+    #sizeRange {
+      display: none;
+    }
+    .input-code {
+      width: 40px;
+    }
+  }
+}
 // canvas {
 //   display: none;
 // }
-// .canvas-box {
-//   display: none;
-// }
+
 .mobile-tablet {
   display: block;
 }
 p {
-  color: white;
   font-size: 1.2rem;
   text-align: center;
   opacity: 0;

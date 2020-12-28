@@ -5,12 +5,44 @@ body {
   height: 100vh;
 }
 
+a#begin-btn {
+  font-size: 2rem;
+}
+
+a#begin-btn p {
+  font-size: 1rem;
+}
+
+.menu {
+  width: 100vw;
+}
+
+.menu > * {
+  height: 35px;
+  margin: 0.5rem 0rem;
+}
+
+.menu .button {
+  font-size: 0.8rem;
+}
+
+.menu .flex-menu .menu-label {
+  width: 20px;
+}
+
+.menu .flex-menu #sizeRange {
+  display: none;
+}
+
+.menu .flex-menu .input-code {
+  width: 40px;
+}
+
 .mobile-tablet {
   display: block;
 }
 
 p {
-  color: white;
   font-size: 1.2rem;
   text-align: center;
   opacity: 0;

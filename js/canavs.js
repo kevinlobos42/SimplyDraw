@@ -40,39 +40,15 @@ colorCode.value = colorChooser.value;
     ctx.beginPath();
     ctx.moveTo(e.clientX , e.clientY );
   }
-  function change(e) {
-    if (e.target.classList.contains("size1")) {
-      lineWidth = 2;
-    } else if (e.target.classList.contains("size2")) {
-      lineWidth = 7;
-    } else if (e.target.classList.contains("size3")) {
-      lineWidth = 12;
-    } else if (e.target.classList.contains("size4")) {
-      lineWidth = 17;
-    } else if (e.target.classList.contains("size5")) {
-      lineWidth = 25;
-    } else if (e.target.classList.contains("black")) {
-      color = "black";
-    } else if (e.target.classList.contains("blue")) {
-      color = "blue";
-    } else if (e.target.classList.contains("purple")) {
-      color = "purple";
-    } else if (e.target.classList.contains("pink")) {
-      color = "pink";
-    } else if (e.target.classList.contains("red")) {
-      color = "red";
-    } else if (e.target.classList.contains("orange")) {
-      color = "orange";
-    } else if (e.target.classList.contains("yellow")) {
-      color = "yellow";
-    } else if (e.target.classList.contains("green")) {
-      color = "green";
-    }
-  }
+  
   // event Listeners
   canvas.addEventListener("mousedown", startPos);
   canvas.addEventListener("mouseup", finish);
   canvas.addEventListener("mousemove", draw);
+  canvas.addEventListener("touchstart", touchStartPos);
+  canvas.addEventListener("touchend", touchFinish);
+  canvas.addEventListener("touchmove", touchDraw);
+
 
   sizeSlider.addEventListener("input", () => {
     if(sizeSlider.value == 0 || sizeSlider.value == 1){
@@ -107,7 +83,6 @@ colorCode.value = colorChooser.value;
       colorChooser.value = colorCode.value;
     }
   })
-  sizes.forEach(item => item.addEventListener("click", change));
   clear.addEventListener("click", () =>
     ctx.clearRect(0, 0, canvas.width, canvas.height)
   );
@@ -119,4 +94,29 @@ colorCode.value = colorChooser.value;
     save.download= "image"
     save.href = canvas.toDataURL();
   })
+  function touchStartPos(e){
+ 
+    painting =true;
+    touchDraw(e);
+  }
+  function touchDraw(e){
+    var touch = e.changedTouches[0];
+    var x = parseInt(touch.clientX);
+    var y = parseInt(touch.clientY);
+  
+    if(!painting) return;
+      ctx.lineWidth = lineWidth;
+      ctx.lineCap = "round";
+  
+      ctx.lineTo(x , y );
+      ctx.stroke();
+      ctx.strokeStyle = color;
+      ctx.beginPath();
+      ctx.moveTo(x , y);
+  }
+  function touchFinish(){
+    painting = false;
+    ctx.beginPath();
+  }
 });
+
