@@ -5,18 +5,6 @@ body {
   height: 100vh;
 }
 
-a#begin-btn {
-  display: none;
-}
-
-canvas {
-  display: none;
-}
-
-.canvas-box {
-  display: none;
-}
-
 .mobile-tablet {
   display: block;
 }

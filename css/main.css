@@ -16,7 +16,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow: hidden;
 }
 
@@ -153,16 +153,17 @@ a {
 
 canvas {
   background: white;
-  -webkit-transition: all 5s linear;
-  transition: all 5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  opacity: 0;
 }
 
 .canvas-box {
-  \transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
   height: 0px;
   width: 98vw;
   background: white;
-  margin-top: calc(10vh + 0.5rem);
 }
 
 .mobile-tablet {
@@ -232,6 +233,90 @@ canvas {
 
 .option .box-items .green {
   background: green;
+}
+
+.options-container {
+  position: absolute;
+}
+
+.menu {
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: #204474;
+}
+
+.menu > * {
+  margin: 1rem 0.8rem;
+  height: 35px;
+}
+
+.menu .button {
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  outline: none;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+}
+
+.menu #save {
+  background-color: #5ad75a;
+}
+
+.menu #clear {
+  background-color: #ff0000;
+}
+
+.menu-label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-label label {
+  margin-top: 0.1rem;
+  text-align: center;
+}
+
+.flex-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.flex-menu > * {
+  margin: 0 0.8rem;
+}
+
+.flex-menu .input-code {
+  width: 100px;
 }
 
 @-webkit-keyframes line-anim {

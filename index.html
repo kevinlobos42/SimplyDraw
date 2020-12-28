@@ -160,48 +160,44 @@
         </clipPath>
       </defs>
     </svg>
-    <div class="option">
-      <div class="box hide" id="size-box">
-        Size
-        <div class="box-items" id="sizes">
-          <div class="item sizes size1">1</div>
-          <div class="item sizes size2">2</div>
-          <div class="item sizes size3">3</div>
-          <div class="item sizes size4">4</div>
-          <div class="item sizes size5">5</div>
-        </div>
-      </div>
-    </div>
-    <div class="option">
-      <div class="box hide" id="color-box">
-        Color
-        <div class="box-items" id="colors">
-          <div class="item black"></div>
-          <div class="item blue"></div>
-          <div class="item purple"></div>
-          <div class="item pink"></div>
-          <div class="item red"></div>
-          <div class="item orange"></div>
-          <div class="item yellow"></div>
-          <div class="item green"></div>
-        </div>
-      </div>
-      <div class="option">
-        <div class="box" id="clear">
-          Clear
-        </div>
-      </div>
-    </div>
+
     <a href="#" id="begin-btn"><p>Begin Drawing!</p></a>
-    <div class="canvas-box">
-      <canvas></canvas>
+    <canvas></canvas>
+    <div class="menu">
+      <a class="button" id="save"><i class="fas fa-save"></i> Save</a>
+      <a class="button" id="clear"><i class="fas fa-eraser"></i> Clear</a>
+      <div class="flex-menu">
+        <div class="menu-label">
+          <input type="range" name="size" id="size" value="0" />
+          <label for="size">Size</label>
+        </div>
+        <input type="number" name="sizeCode" id="sizeCode" class="input-code" />
+      </div>
+      <div class="flex-menu">
+        <div class="labeled-menu">
+          <input type="color" name="color" id="color" />
+          <label for="color">Color</label>
+        </div>
+        <input
+          type="text"
+          name="colorCode"
+          id="colorCode"
+          class="input-code"
+          pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+        />
+      </div>
     </div>
-    <div class="mobile-tablet">
+
+    <!-- <div class="mobile-tablet">
       <p class="lead">To Use this Web app, please use a desktop!</p>
       <p>Sorry for the inconvenience</p>
-    </div>
+    </div> -->
   </body>
-
+  <script src="http://hongru.github.io/proj/canvas2image/canvas2image.js"></script>
   <script src="js/app.js"></script>
   <script src="js/canavs.js"></script>
+  <script
+    src="https://kit.fontawesome.com/b5fb082315.js"
+    crossorigin="anonymous"
+  ></script>
 </html>

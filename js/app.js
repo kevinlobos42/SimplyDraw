@@ -13,33 +13,18 @@ window.onload = () => {
 };
 
 document.querySelector("#begin-btn").addEventListener("click", () => {
-  document.querySelector(".canvas-box").style.height = "819px";
-  setTimeout(() => {
-    document.querySelector("canvas").height = window.innerHeight - 150;
-  }, 2000);
-  document.querySelector("#clear").style.top = "50px";
-  document.querySelector("#clear").style.right = "350px";
-  document.querySelector("#clear").style.display = "grid";
-  document.querySelector("#clear").style.alignItems = "center";
-  document.querySelector("#size-box").style.display = "grid";
-  document.querySelector("#size-box").style.alignItems = "center";
-  document.querySelector("#size-box").style.top = "50px";
-  document.querySelector("#size-box").style.right = "550px";
-  document.querySelector("#color-box").style.display = "grid";
-  document.querySelector("#color-box").style.alignItems = "center";
-  document.querySelector("#color-box").style.top = "50px";
-  document.querySelector("#color-box").style.right = "150px";
-  document.querySelector("svg").style.height = "50px";
-  document.querySelector("svg").style.position = "absolute";
-  document.querySelector("svg").style.top = "50px";
-  document.querySelector("svg").style.left = "0";
+  document.querySelector("canvas").style.opacity = "1";
+  document.querySelector("canvas").height = window.innerHeight;
+  document.querySelector("canvas").width = window.innerWidth;
+  document.querySelector(".menu").style.opacity = "1";
+  document.querySelector("svg").style.display = "none";
   document.querySelector("#begin-btn").style.display = "none";
   document.querySelector("#begin-btn").classList.toggle("cl");
 });
 
 window.addEventListener("resize", () => {
   if (document.querySelector("#begin-btn").classList.contains("cl")) {
-    document.querySelector("canvas").width = window.innerWidth - 40;
-    document.querySelector("canvas").height = window.innerHeight - 150;
+    document.querySelector("canvas").width = window.innerWidth;
+    document.querySelector("canvas").height = window.innerHeight;
   }
 });
